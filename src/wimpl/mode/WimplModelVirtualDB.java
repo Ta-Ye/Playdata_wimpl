@@ -14,10 +14,9 @@ public class WimplModelVirtualDB {
 		parkingLotList.add(new ParkingArea("태열주차장", 37.487743, 127.029556, "서울특별시 서초구 서초2동", 20, 3000, 3000));
 		parkingLotList.add(new ParkingArea("인재개발원 주차장", 37.479556, 127.019185, "서울특별시 서초구 서초1동", 40, 6500, 1000));
 		parkingLotList.add(new ParkingArea("수원주차장", 37.489041, 127.008638, "서울특별시 서초구 서초동 반포대로 99", 3, 2000, 1000));
-		
-
-
-
+		parkingLotList.add(new ParkingArea("엔코아주차장", 37.500000, 127.029556, "서울특별시 서초구 서초2동", 20, 3000, 3000));
+		parkingLotList.add(new ParkingArea("인재개발원 주차장", 37.479556, 127.001185, "서울특별시 강남구", 40, 5500, 1000));
+		parkingLotList.add(new ParkingArea("수원주차장", 37.483041, 127.009638, "서울특별시 서초구 사당역", 3, 6000, 2000));
 	}
 
 	public static WimplModelVirtualDB getInstance() {
