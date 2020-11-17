@@ -26,7 +26,6 @@ public class StartView {
 		controller.getCheapArea(37.486551, 127.020717, 6000);
 		System.out.println("\n*** 03-2.  검색 불가능한 가격 범위에서 검색 ***");
 		controller.getCheapArea(37.486551, 127.020717, 2000);
-		
 	}
 }
 

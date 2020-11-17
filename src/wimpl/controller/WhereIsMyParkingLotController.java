@@ -51,7 +51,8 @@ public class WhereIsMyParkingLotController {
 		//service 3: 가격 검색
 		public void getCheapArea(double MyLatitude, double MyLongtide, int price) {
 			log.info("가격 검색시도 : " + price);
-			
+			log.info("위치 검색시도 : " + MyLatitude + " " + MyLongtide);
+
 			ArrayList<ParkingArea> ParkingLotList = service.getCheapArea(MyLatitude, MyLongtide, price);
 			if (ParkingLotList.size()!=0) {
 				EndView.parkingLotListView(ParkingLotList);
