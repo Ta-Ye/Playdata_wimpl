@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import wimpl.model.dto.ParkingArea;
 import wimpl.service.WhereIsMyParkingLotService;
 import wimpl.view.EndView;
+import wimpl.view.FailView;
 
 @NoArgsConstructor
 @Slf4j
@@ -33,7 +34,7 @@ public class WhereIsMyParkingLotController {
 					EndView.messageView("범위를 늘립니다.");
 				}
 			}
-			EndView.messageView("주변에 주차장이 없습니다.");
+			FailView.failMessageView("주변에 주차장이 없습니다.");
 		}
 
 		//service 2: 주차장 검색
@@ -44,7 +45,7 @@ public class WhereIsMyParkingLotController {
 			if (ParkingLotList.size()!=0) {
 				EndView.parkingLotListView(ParkingLotList);
 			} else {
-				EndView.messageView("해당 이름의 주차장이 없습니다.");
+				FailView.failMessageView("해당 이름의 주차장이 없습니다.");
 			}
 		}
 		
@@ -57,7 +58,7 @@ public class WhereIsMyParkingLotController {
 			if (ParkingLotList.size()!=0) {
 				EndView.parkingLotListView(ParkingLotList);
 			} else {
-				EndView.messageView("조건을 만족하는 주차장이 없습니다.");
+				FailView.failMessageView("조건을 만족하는 주차장이 없습니다.");
 			}
 		}
 	
