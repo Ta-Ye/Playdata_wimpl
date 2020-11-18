@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 import lombok.NoArgsConstructor;
-import wimpl.mode.WimplModelVirtualDB;
+import wimpl.model.WimplModelVirtualDB;
 import wimpl.model.dto.ParkingArea;
 
 class NearComparator implements Comparator<ParkingArea> {
