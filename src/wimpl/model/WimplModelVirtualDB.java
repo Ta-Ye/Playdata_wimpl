@@ -1,4 +1,4 @@
-package wimpl.mode;
+package wimpl.model;
 
 import java.util.ArrayList;
 import wimpl.model.dto.ParkingArea;
